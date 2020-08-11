@@ -18,9 +18,8 @@
  */
 
 import { createFlagError, run, RunContext } from '../run';
-import { parse } from './code_owners/build_code_owners';
 import { ownershipConfig } from './ownership_config';
-import { flush } from './code_owners/flush';
+import { record } from './record';
 
 const description = `
 
@@ -34,7 +33,7 @@ export const generateCodeOwners = () => {
       if (flags.codeOwnersPath === '')
         throw createFlagError('please provide a single --codeOwnersPath flag');
 
-      flush(flags.codeOwnersPath as string)(log)(parse(ownershipConfig));
+      record(flags.codeOwnersPath as string, log, ownershipConfig);
     },
     {
       description,
