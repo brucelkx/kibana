@@ -332,6 +332,19 @@ export const ownershipConfig: OwnershipRule[] = [
   },
   {
     files: [
+      '/src/dev/code_coverage',
+      '/test/functional/services/common',
+      '/test/functional/services/lib',
+      '/test/functional/services/remote',
+      '/vars/kibanaCoverage.groovy',
+      '/vars/kibanaTeamAssign.groovy',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-qa',
+    coverageOwner: 'kibana-qa',
+  },
+  {
+    files: [
       '/src/legacy/server/pid/',
       '/src/legacy/server/utils/',
       '/packages/kbn-babel',
@@ -375,19 +388,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/pulse',
     coverageOwner: 'pulse',
-  },
-  {
-    files: [
-      '/src/dev/code_coverage',
-      '/test/functional/services/common',
-      '/test/functional/services/lib',
-      '/test/functional/services/remote',
-      '/vars/kibanaCoverage.groovy',
-      '/vars/kibanaTeamAssign.groovy',
-    ],
-    excludeFiles: [],
-    codeOwner: '@elastic/kibana-qa',
-    coverageOwner: 'kibana-qa',
   },
   {
     files: [
