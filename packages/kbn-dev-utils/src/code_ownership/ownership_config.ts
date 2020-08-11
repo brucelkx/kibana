@@ -425,6 +425,22 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'kibana-security',
   },
   {
+    files: [
+      '/src/dev/i18n/',
+      '/src/legacy/server/i18n/',
+      '/src/core/public/i18n/',
+      '/packages/kbn-i18n/',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-localization',
+    coverageOwner: 'kibana-localization',
+  },
+  {
+    files: ['/src/legacy/server/i18n/', '/x-pack/plugins/translations/'],
+    excludeFiles: [],
+    coverageOwner: 'kibana-localization',
+  },
+  {
     files: ['/src/legacy/ui/public/capabilities'],
     excludeFiles: [],
     coverageOwner: 'kibana-security',
@@ -460,20 +476,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/pulse',
     coverageOwner: 'pulse',
-  },
-  {
-    files: [
-      '/src/dev/i18n/',
-      '/src/legacy/server/i18n/',
-      '/src/core/public/i18n/',
-      '/packages/kbn-i18n/',
-      '/src/legacy/server/i18n/',
-      '/x-pack/plugins/translations/',
-      '/packages/kbn-i18n/',
-    ],
-    excludeFiles: [],
-    codeOwner: '@elastic/kibana-localization',
-    coverageOwner: 'kibana-localization',
   },
   {
     files: [
