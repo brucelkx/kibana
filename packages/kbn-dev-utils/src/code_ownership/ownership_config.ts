@@ -426,6 +426,14 @@ export const ownershipConfig: OwnershipRule[] = [
   },
   {
     files: [
+      '/src/legacy/ui/public/capabilities',
+      '/x-pack/legacy/plugins/encrypted_saved_objects/',
+    ],
+    excludeFiles: [],
+    coverageOwner: 'kibana-security',
+  },
+  {
+    files: [
       '/src/dev/i18n/',
       '/src/legacy/server/i18n/',
       '/src/core/public/i18n/',
@@ -499,11 +507,6 @@ export const ownershipConfig: OwnershipRule[] = [
     files: ['/packages/kbn-ui-framework/'],
     excludeFiles: [],
     coverageOwner: 'kibana-design',
-  },
-  {
-    files: ['/src/legacy/ui/public/capabilities'],
-    excludeFiles: [],
-    coverageOwner: 'kibana-security',
   },
   {
     files: ['/x-pack/legacy/plugins/reporting', '/x-pack/plugins/reporting'],
