@@ -411,6 +411,25 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'kibana-platform',
   },
   {
+    files: [
+      '/src/core/server/csp/',
+      '/x-pack/legacy/plugins/security/',
+      '/x-pack/legacy/plugins/spaces/',
+      '/x-pack/plugins/spaces/',
+      '/x-pack/plugins/encrypted_saved_objects/',
+      '/x-pack/plugins/security/',
+      '/x-pack/test/api_integration/apis/security/',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-security',
+    coverageOwner: 'kibana-security',
+  },
+  {
+    files: ['/src/legacy/ui/public/capabilities'],
+    excludeFiles: [],
+    coverageOwner: 'kibana-security',
+  },
+  {
     files: ['/x-pack/legacy/plugins/reporting', '/x-pack/plugins/reporting'],
     excludeFiles: [],
     codeOwner: '@elastic/kibana-reporting',
@@ -577,21 +596,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/endpoint-app-team',
     coverageOwner: 'endpoint-app-team',
-  },
-  {
-    files: [
-      '/src/core/server/csp/',
-      '/x-pack/legacy/plugins/security/',
-      '/x-pack/legacy/plugins/spaces/',
-      '/x-pack/plugins/spaces/',
-      '/x-pack/plugins/encrypted_saved_objects/',
-      '/x-pack/plugins/security/',
-      '/x-pack/test/api_integration/apis/security/',
-      '/src/legacy/ui/public/capabilities',
-    ],
-    excludeFiles: [],
-    codeOwner: '@elastic/kibana-security',
-    coverageOwner: 'kibana-security',
   },
   {
     files: [
