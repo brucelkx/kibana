@@ -183,6 +183,17 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'vigneshshanmugam',
   },
   {
+    files: ['/x-pack/legacy/plugins/beats_management/'],
+    excludeFiles: [],
+    codeOwner: '@elastic/beats',
+    coverageOwner: 'beats',
+  },
+  {
+    files: ['/x-pack/plugins/beats_management/'],
+    excludeFiles: [],
+    coverageOwner: 'beats',
+  },
+  {
     files: [
       '/src/legacy/core_plugins/kibana/public/home',
       '/src/legacy/core_plugins/kibana/public/home/np_ready/',
@@ -253,12 +264,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/canvas',
     coverageOwner: 'canvas',
-  },
-  {
-    files: ['/x-pack/legacy/plugins/beats_management/', '/x-pack/plugins/beats_management/'],
-    excludeFiles: [],
-    codeOwner: '@elastic/beats',
-    coverageOwner: 'beats',
   },
   {
     files: ['/x-pack/plugins/code/'],
