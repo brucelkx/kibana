@@ -265,6 +265,22 @@ export const ownershipConfig: OwnershipRule[] = [
   },
   {
     files: [
+      '/x-pack/legacy/plugins/ml/',
+      '/x-pack/plugins/ml/',
+      '/x-pack/test/functional/apps/machine_learning/',
+      '/x-pack/test/functional/services/machine_learning/',
+      '/x-pack/test/functional/services/ml.ts',
+      '/x-pack/plugins/transform/',
+      '/x-pack/test/functional/apps/transform/',
+      '/x-pack/test/functional/services/transform_ui/',
+      '/x-pack/test/functional/services/transform.ts',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/ml-ui',
+    coverageOwner: 'ml-ui',
+  },
+  {
+    files: [
       '/src/legacy/core_plugins/region_map',
       '/src/legacy/core_plugins/tile_map',
       '/src/plugins/maps_legacy/',
@@ -286,12 +302,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/maps',
     coverageOwner: 'maps',
-  },
-  {
-    files: ['/x-pack/legacy/plugins/ml/', '/x-pack/plugins/ml/', '/x-pack/plugins/transform/'],
-    excludeFiles: [],
-    codeOwner: '@elastic/ml-ui',
-    coverageOwner: 'ml-ui',
   },
   {
     files: ['/x-pack/legacy/plugins/reporting', '/x-pack/plugins/reporting'],
