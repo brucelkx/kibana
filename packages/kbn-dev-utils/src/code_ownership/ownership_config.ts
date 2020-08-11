@@ -633,12 +633,18 @@ export const ownershipConfig: OwnershipRule[] = [
       '/x-pack/test/api_integration/apis/security_solution',
       '/x-pack/plugins/case',
       '/x-pack/plugins/lists',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/siem',
+    coverageOwner: 'siem',
+  },
+  {
+    files: [
       '/x-pack/legacy/plugins/siem/',
       '/x-pack/plugins/siem/',
       '/x-pack/plugins/security_solution/',
     ],
     excludeFiles: [],
-    codeOwner: '@elastic/siem',
     coverageOwner: 'siem',
   },
   {
