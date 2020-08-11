@@ -18,8 +18,8 @@
  */
 
 import { PathLike, writeFileSync } from 'fs';
-import { ToolingLog } from '../../tooling_log';
 import { OwnershipRule } from './ownership_config';
+import { ToolingLog } from '../tooling_log';
 
 type FileList = string[];
 type ExcludedFileList = string[];
