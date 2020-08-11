@@ -583,6 +583,13 @@ export const ownershipConfig: OwnershipRule[] = [
       '/x-pack/plugins/upgrade_assistant/',
       '/x-pack/plugins/watcher/',
       '/x-pack/plugins/ingest_pipelines/',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/es-ui',
+    coverageOwner: 'es-ui',
+  },
+  {
+    files: [
       '/x-pack/legacy/plugins/rollup/',
       '/x-pack/legacy/server/lib/create_router/',
       '/x-pack/legacy/server/lib/check_license/',
@@ -591,7 +598,6 @@ export const ownershipConfig: OwnershipRule[] = [
       '/x-pack/plugins/es_ui_shared/',
     ],
     excludeFiles: [],
-    codeOwner: '@elastic/es-ui',
     coverageOwner: 'es-ui',
   },
   {
