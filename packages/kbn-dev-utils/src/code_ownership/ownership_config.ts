@@ -194,6 +194,17 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'beats',
   },
   {
+    files: ['/x-pack/plugins/canvas/', '/x-pack/test/functional/apps/canvas/'],
+    excludeFiles: [],
+    codeOwner: '@elastic/canvas',
+    coverageOwner: 'canvas',
+  },
+  {
+    files: ['/src/plugins/kibana_react/public/code_editor/', '/x-pack/legacy/plugins/canvas/'],
+    excludeFiles: [],
+    coverageOwner: 'canvas',
+  },
+  {
     files: [
       '/src/legacy/core_plugins/kibana/public/home',
       '/src/legacy/core_plugins/kibana/public/home/np_ready/',
@@ -254,16 +265,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/kibana-reporting',
     coverageOwner: 'kibana-reporting',
-  },
-  {
-    files: [
-      '/src/plugins/kibana_react/public/code_editor',
-      '/x-pack/legacy/plugins/canvas/',
-      '/x-pack/plugins/canvas/',
-    ],
-    excludeFiles: [],
-    codeOwner: '@elastic/canvas',
-    coverageOwner: 'canvas',
   },
   {
     files: ['/x-pack/plugins/code/'],
