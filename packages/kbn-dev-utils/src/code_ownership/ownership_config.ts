@@ -206,8 +206,19 @@ export const ownershipConfig: OwnershipRule[] = [
   },
   {
     files: [
-      '/src/legacy/core_plugins/kibana/public/home',
+      '/src/plugins/home/public',
+      '/src/plugins/home/server/*.ts',
+      '/src/plugins/home/server/services/',
+      '/src/legacy/core_plugins/kibana/public/home/*.ts',
+      '/src/legacy/core_plugins/kibana/public/home/*.scss',
       '/src/legacy/core_plugins/kibana/public/home/np_ready/',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-core-ui',
+    coverageOwner: 'kibana-core-ui',
+  },
+  {
+    files: [
       '/src/legacy/core_plugins/newsfeed',
       '/src/plugins/newsfeed',
       '/src/plugins/home/public',
@@ -215,7 +226,6 @@ export const ownershipConfig: OwnershipRule[] = [
       '/src/plugins/home/',
     ],
     excludeFiles: [],
-    codeOwner: '@elastic/kibana-core-ui',
     coverageOwner: 'kibana-core-ui',
   },
   {
