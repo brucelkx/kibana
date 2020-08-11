@@ -17,9 +17,9 @@
  * under the License.
  */
 
-import { OwnerRecord } from '../ownership_config';
+import { OwnershipRule } from '../ownership_config';
 
-export const parse = (ownershipConfig: OwnerRecord[]) => {
+export const parse = (ownershipConfig: OwnershipRule[]) => {
   const owners = new Map();
 
   for (const { files, excludeFiles, codeOwner } of ownershipConfig) {
