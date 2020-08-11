@@ -17,14 +17,14 @@
  * under the License.
  */
 
-export interface OwnerRecord {
+export interface OwnershipRule {
   files: string[]; // Files listed in CODEOWNERS and Code Coverage
   excludeFiles: string[]; // Files in CODEOWNERS, with a ! prepended
   codeOwner: string; // CODEOWNERS Team Name
   coverageOwner: string; // Code Coverage Team Name
 }
 
-export const ownershipConfig = [
+export const ownershipConfig: OwnershipRule[] = [
   {
     files: [
       '/x-pack/plugins/dashboard_enhanced/',
