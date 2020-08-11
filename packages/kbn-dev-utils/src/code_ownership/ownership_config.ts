@@ -490,6 +490,17 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'kibana-alerting-services',
   },
   {
+    files: ['**/*.scss'],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-design',
+    coverageOwner: 'kibana-design',
+  },
+  {
+    files: ['/packages/kbn-ui-framework/'],
+    excludeFiles: [],
+    coverageOwner: 'kibana-design',
+  },
+  {
     files: ['/src/legacy/ui/public/capabilities'],
     excludeFiles: [],
     coverageOwner: 'kibana-security',
@@ -525,12 +536,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/pulse',
     coverageOwner: 'pulse',
-  },
-  {
-    files: ['**/*.scss', '/packages/kbn-ui-framework/'],
-    excludeFiles: [],
-    codeOwner: '@elastic/kibana-design',
-    coverageOwner: 'kibana-design',
   },
   {
     files: ['/x-pack/plugins/enterprise_search/', '/x-pack/test/functional_enterprise_search/'],
