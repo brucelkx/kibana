@@ -229,6 +229,41 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'kibana-core-ui',
   },
   {
+    files: ['/x-pack/legacy/plugins/infra/', '/x-pack/plugins/infra/'],
+    excludeFiles: [],
+    codeOwner: '@elastic/logs-metrics-ui',
+    coverageOwner: 'logs-metrics-ui',
+  },
+  {
+    files: ['/x-pack/legacy/plugins/ingest_manager/', '/x-pack/plugins/ingest_manager/'],
+    excludeFiles: [],
+    codeOwner: '@elastic/ingest-management',
+    coverageOwner: 'ingest-management',
+  },
+  {
+    files: ['/x-pack/plugins/uptime'],
+    excludeFiles: [],
+    codeOwner: '@elastic/uptime',
+    coverageOwner: 'uptime',
+  },
+  {
+    files: ['/x-pack/legacy/plugins/uptime'],
+    excludeFiles: [],
+    coverageOwner: 'uptime',
+  },
+  {
+    files: ['/x-pack/legacy/plugins/monitoring/', '/x-pack/plugins/monitoring'],
+    excludeFiles: [],
+    codeOwner: '@elastic/stack-monitoring-ui',
+    coverageOwner: 'stack-monitoring-ui',
+  },
+  {
+    files: ['/x-pack/plugins/observability/'],
+    excludeFiles: [],
+    codeOwner: '@elastic/observability-ui',
+    coverageOwner: 'observability-ui',
+  },
+  {
     files: [
       '/src/legacy/core_plugins/region_map',
       '/src/legacy/core_plugins/tile_map',
@@ -253,22 +288,10 @@ export const ownershipConfig: OwnershipRule[] = [
     coverageOwner: 'maps',
   },
   {
-    files: ['/x-pack/legacy/plugins/ingest_manager/', '/x-pack/plugins/ingest_manager/'],
-    excludeFiles: [],
-    codeOwner: '@elastic/ingest-management',
-    coverageOwner: 'ingest-management',
-  },
-  {
     files: ['/x-pack/legacy/plugins/ml/', '/x-pack/plugins/ml/', '/x-pack/plugins/transform/'],
     excludeFiles: [],
     codeOwner: '@elastic/ml-ui',
     coverageOwner: 'ml-ui',
-  },
-  {
-    files: ['/x-pack/legacy/plugins/monitoring/', '/x-pack/plugins/monitoring'],
-    excludeFiles: [],
-    codeOwner: '@elastic/stack-monitoring-ui',
-    coverageOwner: 'stack-monitoring-ui',
   },
   {
     files: ['/x-pack/legacy/plugins/reporting', '/x-pack/plugins/reporting'],
@@ -281,18 +304,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/code',
     coverageOwner: 'code',
-  },
-  {
-    files: ['/x-pack/legacy/plugins/infra/', '/x-pack/plugins/infra/'],
-    excludeFiles: [],
-    codeOwner: '@elastic/logs-metrics-ui',
-    coverageOwner: 'logs-metrics-ui',
-  },
-  {
-    files: ['/x-pack/legacy/plugins/uptime', '/x-pack/plugins/uptime'],
-    excludeFiles: [],
-    codeOwner: '@elastic/uptime',
-    coverageOwner: 'uptime',
   },
   {
     files: ['/x-pack/plugins/logstash'],
