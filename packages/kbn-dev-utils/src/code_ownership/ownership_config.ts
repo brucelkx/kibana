@@ -149,6 +149,41 @@ export const ownershipConfig: OwnershipRule[] = [
   },
   {
     files: [
+      '/x-pack/plugins/apm/',
+      '/x-pack/test/functional/apps/apm/',
+      '/src/legacy/core_plugins/apm_oss/',
+      '/src/plugins/apm_oss/',
+      '/src/apm.js',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/apm-ui',
+    coverageOwner: 'apm-ui',
+  },
+  {
+    files: [
+      '/src/plugins/apm_oss/',
+      '/src/legacy/core_plugins/apm_oss/',
+      '/src/legacy/ui/public/apm',
+      '/x-pack/legacy/plugins/apm/',
+      '/x-pack/plugins/observability/',
+    ],
+    excludeFiles: [],
+    coverageOwner: 'apm-ui',
+  },
+  {
+    files: ['/src/apm.js'],
+    excludeFiles: [],
+    codeOwner: '@watson',
+    coverageOwner: 'watson',
+  },
+  {
+    files: ['/src/apm.js'],
+    excludeFiles: [],
+    codeOwner: '@vigneshshanmugam',
+    coverageOwner: 'vigneshshanmugam',
+  },
+  {
+    files: [
       '/src/legacy/core_plugins/kibana/public/home',
       '/src/legacy/core_plugins/kibana/public/home/np_ready/',
       '/src/legacy/core_plugins/newsfeed',
@@ -262,35 +297,6 @@ export const ownershipConfig: OwnershipRule[] = [
     excludeFiles: [],
     codeOwner: '@elastic/pulse',
     coverageOwner: 'pulse',
-  },
-  {
-    files: [
-      '/x-pack/plugins/apm/',
-      '/x-pack/test/functional/apps/apm/',
-      '/src/legacy/core_plugins/apm_oss/',
-      '/src/plugins/apm_oss/',
-      '/src/legacy/core_plugins/apm_oss/',
-      '/src/legacy/ui/public/apm',
-      '/src/plugins/apm_oss/',
-      '/x-pack/legacy/plugins/apm/',
-      '/x-pack/plugins/observability/',
-      '/src/apm.js',
-    ],
-    excludeFiles: [],
-    codeOwner: '@elastic/apm-ui',
-    coverageOwner: 'apm-ui',
-  },
-  {
-    files: ['/src/apm.js'],
-    excludeFiles: [],
-    codeOwner: '@watson',
-    coverageOwner: 'watson',
-  },
-  {
-    files: ['/src/apm.js'],
-    excludeFiles: [],
-    codeOwner: '@vigneshshanmugam',
-    coverageOwner: 'vigneshshanmugam',
   },
   {
     files: [
