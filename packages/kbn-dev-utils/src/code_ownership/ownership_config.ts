@@ -20,8 +20,8 @@
 export interface OwnershipRule {
   files: string[]; // Files listed in CODEOWNERS and Code Coverage
   excludeFiles: string[]; // Files in CODEOWNERS, with a ! prepended
-  codeOwner: string; // CODEOWNERS Team Name
-  coverageOwner: string; // Code Coverage Team Name
+  codeOwner?: string; // CODEOWNERS Team Name
+  coverageOwner?: string; // Code Coverage Team Name
 }
 
 export const ownershipConfig: OwnershipRule[] = [
@@ -31,7 +31,6 @@ export const ownershipConfig: OwnershipRule[] = [
       '/x-pack/plugins/discover_enhanced/',
       '/x-pack/plugins/lens/',
       '/x-pack/plugins/graph/',
-      '/src/legacy/core_plugins/kibana/public/local_application_service/',
       '/src/plugins/dashboard/',
       '/src/plugins/discover/',
       '/src/plugins/input_control_vis/',
@@ -46,8 +45,16 @@ export const ownershipConfig: OwnershipRule[] = [
       '/src/plugins/vis_type_vega/',
       '/src/plugins/vis_type_vislib/',
       '/src/plugins/vis_type_xy/',
-      '/src/plugins/vis_type',
       '/src/plugins/visualize/',
+    ],
+    excludeFiles: [],
+    codeOwner: '@elastic/kibana-app',
+    coverageOwner: 'kibana-app',
+  },
+  {
+    files: [
+      '/src/legacy/core_plugins/kibana/public/local_application_service/',
+      '/src/plugins/vis_type',
       '/src/legacy/core_plugins/kibana/',
       '/src/legacy/core_plugins/kibana/common/utils',
       '/src/legacy/core_plugins/kibana/migrations',
@@ -75,7 +82,6 @@ export const ownershipConfig: OwnershipRule[] = [
       '/x-pack/plugins/lens/',
     ],
     excludeFiles: [],
-    codeOwner: '@elastic/kibana-app',
     coverageOwner: 'kibana-app',
   },
   {
