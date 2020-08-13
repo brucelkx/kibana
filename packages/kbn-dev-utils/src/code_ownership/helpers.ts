@@ -17,32 +17,6 @@
  * under the License.
  */
 
-import { createFlagError, run, RunContext } from '../run';
-import { rules } from './ownership_config';
-import { record } from './record';
+import { OwnershipRule } from './ownership_config';
 
-const description = `
-
-Create .github/CODEOWNERS file from authoritative source
-
-`;
-
-export const generateCodeOwners = () => {
-  run(
-    ({ flags, log }: RunContext) => {
-      if (flags.codeOwnersPath === '')
-        throw createFlagError('please provide a single --codeOwnersPath flag');
-
-      record(flags.codeOwnersPath as string, log, rules);
-    },
-    {
-      description,
-      flags: {
-        string: ['codeOwnersPath'],
-        help: `
---codeOwnersPath       Required, path to CODEOWNERS file.
-        `,
-      },
-    }
-  );
-};
+export function getCoverageOwner(path: string, rules: OwnershipRule[]) {}

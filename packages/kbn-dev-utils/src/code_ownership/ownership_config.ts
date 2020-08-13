@@ -24,7 +24,7 @@ export interface OwnershipRule {
   coverageOwner?: string; // Code Coverage Team Name
 }
 
-export const ownershipConfig: OwnershipRule[] = [
+export const rules: OwnershipRule[] = [
   {
     files: [
       '/x-pack/plugins/dashboard_enhanced/',
